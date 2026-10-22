@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Help explore a musical instrument controlled by finger movements. A paid, open-source experiment for curious makers and small teams.">
+  <title>Can you turn a hand into a musical instrument?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead wrap">
+  <a class="wordmark" href="#">AN OPEN INVITATION<br>TO CURIOUS MAKERS</a>
+  <nav aria-label="Main navigation"><a href="#assignment">The experiment</a><a href="#apply">Want to build this? <span aria-hidden="true">↗</span></a></nav>
+</header>
+<main id="main">
+  <section class="hero wrap" aria-labelledby="headline">
+    <p class="eyebrow"><span class="dot"></span> MUSIC × MOVEMENT × MAKING</p>
+    <h1 id="headline">Can you turn<br>a hand into a<br><em>musical<br>instrument?</em></h1>
+    <div class="hero-bottom"><p>Five fingers. Tiny sensors. A new way to make music.<br>Help us build the first piece of something unusual.</p><a class="button" href="#assignment">Explore the experiment <span aria-hidden="true">↓</span></a></div>
+    <span class="hero-note">A PAID, OPEN-SOURCE EXPERIMENT</span>
+  </section>
+  <section class="invitation" id="assignment">
+    <div class="wrap assignment-grid">
+      <div class="assignment-copy"><p class="eyebrow">01 / THE FIRST ASSIGNMENT</p><h2>One hand.<br>Five tiny sensors.<br><span>Room to explore.</span></h2><p class="lead">We imagine a musical instrument you play by moving your fingers.</p><p>Before we explore the sounds, we need to explore the hand. Create a wearable system that holds five motion sensors, one on each finger, allows natural finger movement, and provides reliable sensor data.</p><p>The physical design is entirely open. We’d love to see the ideas you develop to meet this challenge.</p><a class="text-link" href="#details">A little more about the hardware <span aria-hidden="true">↗</span></a></div>
+      <figure class="hand-figure"><img src="assets/hand.svg" alt="Concept sketch of a hand with five motion sensors connected to electronics" width="560" height="650"><figcaption>AN ILLUSTRATION, NOT A DESIGN TO FOLLOW.<br>THE PHYSICAL DESIGN IS ENTIRELY OPEN.</figcaption></figure>
+    </div>
+  </section>
+  <section class="terms wrap" aria-labelledby="payment-title">
+    <div class="payment"><p class="eyebrow">GOOD IDEAS DESERVE REAL SUPPORT</p><h2 id="payment-title">₹10,000</h2><p class="payment-label">PER SELECTED PROJECT</p><p class="materials">+ materials paid separately</p><p>Individuals and small teams are welcome.<br>We may select more than one project.</p><a class="button" href="#apply">Want to give it a try? <span aria-hidden="true">↗</span></a></div>
+    <div class="principles"><article><span>01</span><div><h3>Experiments count. Even the failed ones.</h3><p>We pay for genuine, documented experimental work. An idea that doesn’t work can still teach us something. Show what you tried, what happened, and what you learned.</p></div></article><article><span>02</span><div><h3>Make it your way.</h3><p>The physical design is entirely yours to explore. We’re looking for your own ideas and thoughtful experiments, not a polished product.</p></div></article><article><span>03</span><div><h3>Build in the open. Get the credit.</h3><p>All work will be open source, with public credit for your contribution. There may also be opportunities for further paid projects as the instrument develops.</p></div></article></div>
+  </section>
+  <section class="hardware" id="details">
+    <div class="wrap hardware-grid">
+      <div>
+        <p class="eyebrow">02 / THE STARTING POINT</p>
+        <h2>Small electronics.<br>Big possibilities.</h2>
+        <p>The first assignment is the wearable sensor system. It should hold five motion sensors, one on each finger, allow natural finger movement, and provide reliable sensor data. Musical synthesis software comes later; it isn’t part of this assignment.</p>
+        <h3 class="hardware-subheading">What needs figuring out?</h3>
+        <p>How can the system hold all five sensors securely while your fingers move naturally? How reliably can it capture data as you move your hand?</p>
+        <p>The physical design is entirely open — develop your own ideas. Show us what you try, how freely the hand moves, and how reliable the readings are. Tell us what you learn and what needs another attempt.</p>
+      </div>
+      <div class="parts">
+        <h3 class="hardware-subheading">Proposed reference components</h3>
+        <div><b>Sensors</b><span>5 × LSM6DSV16X motion sensors, one per finger</span></div>
+        <div><b>Connectivity</b><span>Qwiic / JST-SH connectivity between the electronics</span></div>
+        <div><b>Controller</b><span>ESP32 with Qwiic connectivity to collect the sensor readings</span></div>
+        <div><b>Sensor interface</b><span>PCA9548A eight-channel I²C multiplexer to connect and read the five sensors</span></div>
+        <div><b>Wearable design</b><span>An entirely open physical design that holds one sensor on each finger, allows natural movement, and provides reliable sensor data</span></div>
+        <aside class="reference-note"><h3>Our reference electronics. Your physical design.</h3><p>Please plan to work with these reference electronics. If you have a compelling reason to use different components, we’re happy to hear it. Discuss any changes with us and get approval before purchasing. The physical design is entirely open.</p></aside>
+      </div>
+    </div>
+  </section>
+  <section class="application wrap" id="apply"><div class="apply-intro"><p class="eyebrow">03 / BRING YOUR CURIOSITY</p><h2>Want to give<br>it a <em>try?</em></h2><p>Show us something you've built, and tell us a little about yourself. That's all we need.</p><p class="location">TIRUVANNAMALAI, TAMIL NADU</p></div>
+    <div class="application-panel">
+      <p class="preview-note"><b>Tell us a little about yourself</b><br>Individuals and small teams are welcome. Fields marked optional can be left blank.</p>
+      <form id="application-form" action="https://formspree.io/f/xwlvgjjv" method="post" aria-label="Project application">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label for="name">Your name</label>
+        <input id="name" name="applicant_name" type="text" autocomplete="name" required placeholder="What should we call you?">
+        <label for="applying-as">Are you applying individually or as a team?</label>
+        <select id="applying-as" name="applying_as" required>
+          <option value="individual">Individually</option>
+          <option value="team">As a team</option>
+        </select>
+        <div id="team-details" hidden>
+          <label for="team-members">Team member names <span>including you</span></label>
+          <textarea id="team-members" name="team_members" rows="2" disabled placeholder="Who’s on your team?"></textarea>
+        </div>
+        <label for="contact">WhatsApp number or email address</label>
+        <input id="contact" name="contact" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" required placeholder="Include the country code for WhatsApp">
+        <label for="built">Something you’ve built</label>
+        <textarea id="built" name="built" rows="3" required placeholder="Tell us a little about it. Small experiments count."></textarea>
+        <label for="project-link">Photos, videos, or projects <span>(optional)</span></label>
+        <input id="project-link" name="project_link" type="url" pattern="[Hh][Tt][Tt][Pp][Ss]://.*" title="Please enter a full HTTPS link, starting with https://" inputmode="url" autocomplete="url" autocapitalize="none" spellcheck="false" placeholder="https://…" aria-describedby="link-help">
+        <p id="link-help" class="form-footnote">Share a Google Drive folder, Google Photos album, GitHub project, or any other link showing something you've made. Make sure anyone with the link can view it.</p>
+        <label for="interest">Why does this project interest you?</label>
+        <textarea id="interest" name="interest" rows="3" required placeholder="What would you like to try or explore?"></textarea>
+        <p class="form-footnote">We use your application only to contact you about this project. Your details are sent through Formspree.</p>
+        <button id="application-submit" class="button" type="submit" disabled>Send application <span aria-hidden="true">↗</span></button>
+        <p id="application-status" class="form-footnote" role="status" aria-live="polite" aria-atomic="true"></p>
+        <noscript><p class="form-footnote">Please enable JavaScript to send your application.</p></noscript>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="wrap"><p>MADE OF CURIOSITY. BUILT TO BE SHARED.</p><a href="#">Back to the top ↑</a></footer>
+<script src="application.js" defer></script>
+</body>
+</html>
